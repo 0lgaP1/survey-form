@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div id="external-wrap">
+      <div id="internal-wrap">
+    <h1 id="title">Deep Questions to Ask Yourself</h1>
+    <p id="description">
+      Just ask some right questions to explore the closest person of your life
+    </p>
+    <form id="survey-form" method="post">
+      <fieldset>
+        <p>Let's get it started!</p>
+        <div id="start-survey">
+        <label id="name-label" for="name">Your name:</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Enter your name"
+          required
+        />
+
+        <label id="email-label" for="email">Your email:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Your email"
+          required
+        />
+
+        <label id="number-label" for="number">Your phone number:</label>
+        <input
+          type="number"
+          id="number"
+          max="8"
+          min="1"
+          name="number"
+          placeholder="Enter your phone number"
+        />
+
+        <label id="dropdown-label" for="dropdown">Select your sex:</label>
+        <select id="dropdown">
+          <option value="">Select</option>
+          <option value="1">Male</option>
+          <option value="2">Female</option>
+        </select>
+</div>
+        <p>Mark your strong skills:</p>
+        <div class="radio-group">
+          <input id="optimism" type="radio" name="skills" value="optimism" />
+          <label for="optimism">Optimism</label>
+        </div>
+        <div class="radio-group">
+          <input id="curiosity" type="radio" name="skills" value="curiosity" />
+          <label for="curiosity">Curiosity</label>
+        </div>
+        <div class="radio-group">
+          <input id="vitality" type="radio" name="skills" value="vitality" />
+          <label for="vitality">Vitality</label>
+        </div>
+        <div class="radio-group">
+          <input id="personal" type="radio" name="skills" value="personal" checked />
+          <label for="personal">Sth else<input type="textarea" id="extra-skills" placeholder="What else?"/></label> 
+        </div>
+
+        <p>What’s the quickest way someone can lose your trust?</p>
+        <div>
+          <input type="checkbox" id="yes" value="yes" />
+          <label for="yes">To cheat to someone else in my presence</label>
+        </div>
+        <div>
+          <input type="checkbox" id="no" value="no" />
+          <label for="no">To gossip about someone</label>
+        </div>
+        <div>
+          <input type="checkbox" id="dont_know" value="dont_know" />
+          <label for="dont_know">To ride without a valid bus ticket</label>
+        </div>
+
+        <label for="bio"><p>What is your number one goal in life?</p></label>
+        <textarea id="bio" name="bio" rows="3" cols="30" placeholder="For sure it's ..." ></textarea>
+
+        <label for="bio"><p>What do you think makes someone a good person?</p></label>
+        <textarea id="bio" name="bio" rows="3" cols="30" placeholder="This person should be ..." ></textarea>
+
+        <label for="bio"><p>Where is the most beautiful place you have ever seen?</p></label>
+        <textarea id="bio" name="bio" rows="3" cols="30" placeholder="I have plenty of them ..." ></textarea>
+
+        <div>
+          <p>Are you a good gift giver?</p>
+          <div>
+            <input type="radio" id="group1_option1" name="group1" value="1" />
+            <label for="group1_option1">Yes, I like to plan and prepare personal gifts</label>
+          </div>
+          <div>
+            <input type="radio" id="group1_option2" name="group1" value="2" />
+            <label for="group1_option2">No, celebrations and invitations are my constant problem</label>
+          </div>
+        </div>
+
+        <div>
+          <p>Is it easy for you to accept help from people?</p>
+          <div>
+            <input type="radio" id="group2_option1" name="group2" value="1" />
+            <label for="group2_option1">Yes, it's a pleasure to meet supportive people</label>
+          </div>
+          <div>
+            <input type="radio" id="group2_option2" name="group2" value="2" />
+            <label for="group2_option2">"I can buy myself flowers..."</label>
+          </div>
+        </div>
+
+        <input type="submit" id="submit" />
+      </fieldset>
+      </div>
+      </div>
+    </form>
+  </body>
+</html>

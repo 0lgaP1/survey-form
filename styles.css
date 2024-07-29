@@ -1,0 +1,73 @@
+* {
+    box-sizing: border-box;
+    padding: 5px;
+    margin: 0;
+    font-family: sans-serif;
+    font-size: 16px;
+  }
+  
+  #external-wrap {
+    position: relative;
+    overflow: hidden;
+    /* border: 4px solid red; */
+    display: flex;
+    justify-content: center; 
+    align-items: center;  
+  }
+  
+  #external-wrap::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(https://serwertoma.nazwa.pl/instalator/wordpress/wp-content/uploads/2015/11/cropped-65020203_thumbnail1.jpg);
+    background-size: cover;
+    opacity: 0.5; 
+    z-index: -1; 
+  }
+  
+  #internal-wrap {
+    background-color: rgba(250, 103, 196, 0.481);
+    max-width: 400px;
+    width: 100%;
+    display: block;
+    z-index: 1; 
+    text-align: start;
+    padding: 20px; 
+  }
+  
+  select, textarea {
+    display: block;
+    margin: 5px 5px 5px 0;
+    width: 100%;
+  }
+  
+  .radio-group {
+    display: block;
+    align-items: start;
+    margin-bottom: 8px;
+    padding: 0;
+  }
+  
+  .radio-group input {
+    margin-left: 6px;
+    height: 18px;
+    max-width: 100%
+  }
+  
+  #start-survey input {
+    display: block;
+    width: 100%;
+  }
+  
+  h1 {
+    font-size: 24px;
+  }
+  
+  p {
+    font-size: 20px;
+  }
+  
+  
